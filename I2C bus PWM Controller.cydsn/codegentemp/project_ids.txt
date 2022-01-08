@@ -1,0 +1,10 @@
+C:\Users\dchip\Documents\PSoC Creator\HR_Homeworks\Husky_Robotics_Firmware\Homework_1.cydsn\Homework_1.cyprj|430ce7c6-99e5-4f8c-a7d8-9e74626bae89
+C:\Users\dchip\Documents\Downloaded Libraries\Motor-Unit-Firmware-A-2019-2020-master\FunWithLEDs\P4_MultiRings.cydsn\P4_MultiRings.cyprj|acbab1cc-93f6-44a0-bcfb-0406382e64bd
+C:\Users\dchip\Documents\Downloaded Libraries\Motor-Unit-Firmware-A-2019-2020-master\FunWithLEDs\StripLightLib.cylib\StripLightLib.cyprj|4f24084f-7a67-4fb1-97ec-bbbd3e3c9e44
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|e0bf0684-6bb6-4657-8c20-e02f4ed250a3
+C:\Users\dchip\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|97b87ea7-12b4-4b62-88b2-14d9001ba724
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|c5acd90f-9a68-44e8-9227-1824f4109fe7
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|f9dac7bf-7a8e-4f88-ae8a-53f01535d05c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|caef85a5-b9ed-4fd5-bd71-2bd6d2fa21a8
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|fb27c36f-a456-4e06-9ca6-729241ac93a0
+C:\Users\dchip\Documents\PSoC Creator\HR_Homeworks\Husky_Robotics_Firmware\I2C bus PWM Controller.cydsn\I2C bus PWM Controller.cyprj|ac1d9f9a-909f-4645-89af-0a8cf1117913
