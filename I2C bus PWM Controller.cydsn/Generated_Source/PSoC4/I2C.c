@@ -539,22 +539,22 @@ static void I2C_ScbModeStop(void)
             hsiomSel[I2C_TX_SDA_MISO_PIN_INDEX] = I2C_TX_SDA_MISO_HSIOM_SEL_SPI;
         #endif /* (I2C_TX_SDA_MISO_PIN) */
         
-        #if (I2C_CTS_SCLK_PIN)
-            hsiomSel[I2C_CTS_SCLK_PIN_INDEX] = I2C_CTS_SCLK_HSIOM_SEL_SPI;
-        #endif /* (I2C_CTS_SCLK_PIN) */
+        #if (I2C_SCLK_PIN)
+            hsiomSel[I2C_SCLK_PIN_INDEX] = I2C_SCLK_HSIOM_SEL_SPI;
+        #endif /* (I2C_SCLK_PIN) */
 
             if (I2C_SPI_SLAVE == subMode)
             {
                 /* Slave */
                 pinsDm[I2C_RX_SCL_MOSI_PIN_INDEX] = I2C_PIN_DM_DIG_HIZ;
                 pinsDm[I2C_TX_SDA_MISO_PIN_INDEX] = I2C_PIN_DM_STRONG;
-                pinsDm[I2C_CTS_SCLK_PIN_INDEX] = I2C_PIN_DM_DIG_HIZ;
+                pinsDm[I2C_SCLK_PIN_INDEX] = I2C_PIN_DM_DIG_HIZ;
 
-            #if (I2C_RTS_SS0_PIN)
+            #if (I2C_SS0_PIN)
                 /* Only SS0 is valid choice for Slave */
-                hsiomSel[I2C_RTS_SS0_PIN_INDEX] = I2C_RTS_SS0_HSIOM_SEL_SPI;
-                pinsDm  [I2C_RTS_SS0_PIN_INDEX] = I2C_PIN_DM_DIG_HIZ;
-            #endif /* (I2C_RTS_SS0_PIN) */
+                hsiomSel[I2C_SS0_PIN_INDEX] = I2C_SS0_HSIOM_SEL_SPI;
+                pinsDm  [I2C_SS0_PIN_INDEX] = I2C_PIN_DM_DIG_HIZ;
+            #endif /* (I2C_SS0_PIN) */
 
             #if (I2C_TX_SDA_MISO_PIN)
                 /* Disable input buffer */
@@ -566,13 +566,13 @@ static void I2C_ScbModeStop(void)
                 /* (Master) */
                 pinsDm[I2C_RX_SCL_MOSI_PIN_INDEX] = I2C_PIN_DM_STRONG;
                 pinsDm[I2C_TX_SDA_MISO_PIN_INDEX] = I2C_PIN_DM_DIG_HIZ;
-                pinsDm[I2C_CTS_SCLK_PIN_INDEX] = I2C_PIN_DM_STRONG;
+                pinsDm[I2C_SCLK_PIN_INDEX] = I2C_PIN_DM_STRONG;
 
-            #if (I2C_RTS_SS0_PIN)
-                hsiomSel [I2C_RTS_SS0_PIN_INDEX] = I2C_RTS_SS0_HSIOM_SEL_SPI;
-                pinsDm   [I2C_RTS_SS0_PIN_INDEX] = I2C_PIN_DM_STRONG;
-                pinsInBuf |= I2C_RTS_SS0_PIN_MASK;
-            #endif /* (I2C_RTS_SS0_PIN) */
+            #if (I2C_SS0_PIN)
+                hsiomSel [I2C_SS0_PIN_INDEX] = I2C_SS0_HSIOM_SEL_SPI;
+                pinsDm   [I2C_SS0_PIN_INDEX] = I2C_PIN_DM_STRONG;
+                pinsInBuf |= I2C_SS0_PIN_MASK;
+            #endif /* (I2C_SS0_PIN) */
 
             #if (I2C_SS1_PIN)
                 hsiomSel [I2C_SS1_PIN_INDEX] = I2C_SS1_HSIOM_SEL_SPI;
@@ -600,9 +600,9 @@ static void I2C_ScbModeStop(void)
             #else
             #endif /* (I2C_RX_SCL_MOSI_PIN) */
 
-            #if (I2C_CTS_SCLK_PIN)
-                pinsInBuf |= I2C_CTS_SCLK_PIN_MASK;
-            #endif /* (I2C_CTS_SCLK_PIN) */
+            #if (I2C_SCLK_PIN)
+                pinsInBuf |= I2C_SCLK_PIN_MASK;
+            #endif /* (I2C_SCLK_PIN) */
             }
         }
         else /* UART */
@@ -646,22 +646,22 @@ static void I2C_ScbModeStop(void)
                     if (0u != (I2C_UART_CTS_PIN_ENABLE & uartEnableMask))
                     {
                         /* CTS input is multiplexed with SCLK */
-                    #if (I2C_CTS_SCLK_PIN)
-                        hsiomSel[I2C_CTS_SCLK_PIN_INDEX] = I2C_CTS_SCLK_HSIOM_SEL_UART;
-                        pinsDm  [I2C_CTS_SCLK_PIN_INDEX] = I2C_PIN_DM_DIG_HIZ;
-                    #endif /* (I2C_CTS_SCLK_PIN) */
+                    #if (I2C_SCLK_PIN)
+                        hsiomSel[I2C_SCLK_PIN_INDEX] = I2C_SCLK_HSIOM_SEL_UART;
+                        pinsDm  [I2C_SCLK_PIN_INDEX] = I2C_PIN_DM_DIG_HIZ;
+                    #endif /* (I2C_SCLK_PIN) */
                     }
 
                     if (0u != (I2C_UART_RTS_PIN_ENABLE & uartEnableMask))
                     {
                         /* RTS output is multiplexed with SS0 */
-                    #if (I2C_RTS_SS0_PIN)
-                        hsiomSel[I2C_RTS_SS0_PIN_INDEX] = I2C_RTS_SS0_HSIOM_SEL_UART;
-                        pinsDm  [I2C_RTS_SS0_PIN_INDEX] = I2C_PIN_DM_STRONG;
+                    #if (I2C_SS0_PIN)
+                        hsiomSel[I2C_SS0_PIN_INDEX] = I2C_SS0_HSIOM_SEL_UART;
+                        pinsDm  [I2C_SS0_PIN_INDEX] = I2C_PIN_DM_STRONG;
                         
                         /* Disable input buffer */
-                        pinsInBuf |= I2C_RTS_SS0_PIN_MASK;
-                    #endif /* (I2C_RTS_SS0_PIN) */
+                        pinsInBuf |= I2C_SS0_PIN_MASK;
+                    #endif /* (I2C_SS0_PIN) */
                     }
                 }
             #endif /* !(I2C_CY_SCBIP_V0 || I2C_CY_SCBIP_V1) */
@@ -722,31 +722,31 @@ static void I2C_ScbModeStop(void)
     #endif /* (!I2C_CY_SCBIP_V1) */
     #endif /* (I2C_RX_SCL_MOSI_PIN) */
 
-    #if (I2C_CTS_SCLK_PIN)
-        I2C_SET_HSIOM_SEL(I2C_CTS_SCLK_HSIOM_REG,
-                                       I2C_CTS_SCLK_HSIOM_MASK,
-                                       I2C_CTS_SCLK_HSIOM_POS,
-                                       hsiomSel[I2C_CTS_SCLK_PIN_INDEX]);
+    #if (I2C_SCLK_PIN)
+        I2C_SET_HSIOM_SEL(I2C_SCLK_HSIOM_REG,
+                                       I2C_SCLK_HSIOM_MASK,
+                                       I2C_SCLK_HSIOM_POS,
+                                       hsiomSel[I2C_SCLK_PIN_INDEX]);
 
-        I2C_uart_cts_spi_sclk_SetDriveMode((uint8) pinsDm[I2C_CTS_SCLK_PIN_INDEX]);
+        I2C_spi_sclk_SetDriveMode((uint8) pinsDm[I2C_SCLK_PIN_INDEX]);
 
-        I2C_SET_INP_DIS(I2C_uart_cts_spi_sclk_INP_DIS,
-                                     I2C_uart_cts_spi_sclk_MASK,
-                                     (0u != (pinsInBuf & I2C_CTS_SCLK_PIN_MASK)));
-    #endif /* (I2C_CTS_SCLK_PIN) */
+        I2C_SET_INP_DIS(I2C_spi_sclk_INP_DIS,
+                                     I2C_spi_sclk_MASK,
+                                     (0u != (pinsInBuf & I2C_SCLK_PIN_MASK)));
+    #endif /* (I2C_SCLK_PIN) */
 
-    #if (I2C_RTS_SS0_PIN)
-        I2C_SET_HSIOM_SEL(I2C_RTS_SS0_HSIOM_REG,
-                                       I2C_RTS_SS0_HSIOM_MASK,
-                                       I2C_RTS_SS0_HSIOM_POS,
-                                       hsiomSel[I2C_RTS_SS0_PIN_INDEX]);
+    #if (I2C_SS0_PIN)
+        I2C_SET_HSIOM_SEL(I2C_SS0_HSIOM_REG,
+                                       I2C_SS0_HSIOM_MASK,
+                                       I2C_SS0_HSIOM_POS,
+                                       hsiomSel[I2C_SS0_PIN_INDEX]);
 
-        I2C_uart_rts_spi_ss0_SetDriveMode((uint8) pinsDm[I2C_RTS_SS0_PIN_INDEX]);
+        I2C_spi_ss0_SetDriveMode((uint8) pinsDm[I2C_SS0_PIN_INDEX]);
 
-        I2C_SET_INP_DIS(I2C_uart_rts_spi_ss0_INP_DIS,
-                                     I2C_uart_rts_spi_ss0_MASK,
-                                     (0u != (pinsInBuf & I2C_RTS_SS0_PIN_MASK)));
-    #endif /* (I2C_RTS_SS0_PIN) */
+        I2C_SET_INP_DIS(I2C_spi_ss0_INP_DIS,
+                                     I2C_spi_ss0_MASK,
+                                     (0u != (pinsInBuf & I2C_SS0_PIN_MASK)));
+    #endif /* (I2C_SS0_PIN) */
 
     #if (I2C_SS1_PIN)
         I2C_SET_HSIOM_SEL(I2C_SS1_HSIOM_REG,

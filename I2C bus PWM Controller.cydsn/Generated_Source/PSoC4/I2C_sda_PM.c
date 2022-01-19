@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: SclPin.c  
+* File Name: I2C_sda.c  
 * Version 2.20
 *
 * Description:
@@ -15,13 +15,13 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "SclPin.h"
+#include "I2C_sda.h"
 
-static SclPin_BACKUP_STRUCT  SclPin_backup = {0u, 0u, 0u};
+static I2C_sda_BACKUP_STRUCT  I2C_sda_backup = {0u, 0u, 0u};
 
 
 /*******************************************************************************
-* Function Name: SclPin_Sleep
+* Function Name: I2C_sda_Sleep
 ****************************************************************************//**
 *
 * \brief Stores the pin configuration and prepares the pin for entering chip 
@@ -39,30 +39,30 @@ static SclPin_BACKUP_STRUCT  SclPin_backup = {0u, 0u, 0u};
 *  deep-sleep/hibernate modes.
 *
 * \funcusage
-*  \snippet SclPin_SUT.c usage_SclPin_Sleep_Wakeup
+*  \snippet I2C_sda_SUT.c usage_I2C_sda_Sleep_Wakeup
 *******************************************************************************/
-void SclPin_Sleep(void)
+void I2C_sda_Sleep(void)
 {
-    #if defined(SclPin__PC)
-        SclPin_backup.pcState = SclPin_PC;
+    #if defined(I2C_sda__PC)
+        I2C_sda_backup.pcState = I2C_sda_PC;
     #else
         #if (CY_PSOC4_4200L)
             /* Save the regulator state and put the PHY into suspend mode */
-            SclPin_backup.usbState = SclPin_CR1_REG;
-            SclPin_USB_POWER_REG |= SclPin_USBIO_ENTER_SLEEP;
-            SclPin_CR1_REG &= SclPin_USBIO_CR1_OFF;
+            I2C_sda_backup.usbState = I2C_sda_CR1_REG;
+            I2C_sda_USB_POWER_REG |= I2C_sda_USBIO_ENTER_SLEEP;
+            I2C_sda_CR1_REG &= I2C_sda_USBIO_CR1_OFF;
         #endif
     #endif
-    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(SclPin__SIO)
-        SclPin_backup.sioState = SclPin_SIO_REG;
+    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(I2C_sda__SIO)
+        I2C_sda_backup.sioState = I2C_sda_SIO_REG;
         /* SIO requires unregulated output buffer and single ended input buffer */
-        SclPin_SIO_REG &= (uint32)(~SclPin_SIO_LPM_MASK);
+        I2C_sda_SIO_REG &= (uint32)(~I2C_sda_SIO_LPM_MASK);
     #endif  
 }
 
 
 /*******************************************************************************
-* Function Name: SclPin_Wakeup
+* Function Name: I2C_sda_Wakeup
 ****************************************************************************//**
 *
 * \brief Restores the pin configuration that was saved during Pin_Sleep(). This 
@@ -77,22 +77,22 @@ void SclPin_Sleep(void)
 *  None
 *  
 * \funcusage
-*  Refer to SclPin_Sleep() for an example usage.
+*  Refer to I2C_sda_Sleep() for an example usage.
 *******************************************************************************/
-void SclPin_Wakeup(void)
+void I2C_sda_Wakeup(void)
 {
-    #if defined(SclPin__PC)
-        SclPin_PC = SclPin_backup.pcState;
+    #if defined(I2C_sda__PC)
+        I2C_sda_PC = I2C_sda_backup.pcState;
     #else
         #if (CY_PSOC4_4200L)
             /* Restore the regulator state and come out of suspend mode */
-            SclPin_USB_POWER_REG &= SclPin_USBIO_EXIT_SLEEP_PH1;
-            SclPin_CR1_REG = SclPin_backup.usbState;
-            SclPin_USB_POWER_REG &= SclPin_USBIO_EXIT_SLEEP_PH2;
+            I2C_sda_USB_POWER_REG &= I2C_sda_USBIO_EXIT_SLEEP_PH1;
+            I2C_sda_CR1_REG = I2C_sda_backup.usbState;
+            I2C_sda_USB_POWER_REG &= I2C_sda_USBIO_EXIT_SLEEP_PH2;
         #endif
     #endif
-    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(SclPin__SIO)
-        SclPin_SIO_REG = SclPin_backup.sioState;
+    #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(I2C_sda__SIO)
+        I2C_sda_SIO_REG = I2C_sda_backup.sioState;
     #endif
 }
 

@@ -856,8 +856,8 @@ extern uint8 I2C_initVar;
 #define I2C_FIFO_SIZE      (8u)  /* TX or RX FIFO size. */
 #define I2C_EZ_DATA_NR     (32u)  /* Number of words in EZ memory. */ 
 #define I2C_ONE_BYTE_WIDTH (8u)            /* Number of bits in one byte. */
-#define I2C_FF_DATA_NR_LOG2_MASK       (0x0Fu)      /* Number of bits to represent a FIFO address. */
-#define I2C_FF_DATA_NR_LOG2_PLUS1_MASK (0x1Fu) /* Number of bits to represent #bytes in FIFO. */
+#define I2C_FF_DATA_NR_LOG2_MASK       (0x07u)      /* Number of bits to represent a FIFO address. */
+#define I2C_FF_DATA_NR_LOG2_PLUS1_MASK (0x0Fu) /* Number of bits to represent #bytes in FIFO. */
 
 
 /***************************************

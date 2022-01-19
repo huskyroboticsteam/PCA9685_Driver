@@ -32,14 +32,14 @@
 #define I2C_REMOVE_RX_WAKE_SCL_MOSI_PIN  (1u)
 #define I2C_REMOVE_RX_SCL_MOSI_PIN      (1u)
 #define I2C_REMOVE_TX_SDA_MISO_PIN      (1u)
-#define I2C_REMOVE_CTS_SCLK_PIN      (1u)
-#define I2C_REMOVE_RTS_SS0_PIN      (1u)
+#define I2C_REMOVE_SCLK_PIN      (1u)
+#define I2C_REMOVE_SS0_PIN      (1u)
 #define I2C_REMOVE_SS1_PIN                 (1u)
 #define I2C_REMOVE_SS2_PIN                 (1u)
 #define I2C_REMOVE_SS3_PIN                 (1u)
 
 /* Mode defined pins */
-#define I2C_REMOVE_I2C_PINS                (1u)
+#define I2C_REMOVE_I2C_PINS                (0u)
 #define I2C_REMOVE_SPI_MASTER_PINS         (1u)
 #define I2C_REMOVE_SPI_MASTER_SCLK_PIN     (1u)
 #define I2C_REMOVE_SPI_MASTER_MOSI_PIN     (1u)
@@ -62,8 +62,8 @@
 #define I2C_RX_WAKE_SCL_MOSI_PIN (0u == I2C_REMOVE_RX_WAKE_SCL_MOSI_PIN)
 #define I2C_RX_SCL_MOSI_PIN     (0u == I2C_REMOVE_RX_SCL_MOSI_PIN)
 #define I2C_TX_SDA_MISO_PIN     (0u == I2C_REMOVE_TX_SDA_MISO_PIN)
-#define I2C_CTS_SCLK_PIN     (0u == I2C_REMOVE_CTS_SCLK_PIN)
-#define I2C_RTS_SS0_PIN     (0u == I2C_REMOVE_RTS_SS0_PIN)
+#define I2C_SCLK_PIN     (0u == I2C_REMOVE_SCLK_PIN)
+#define I2C_SS0_PIN     (0u == I2C_REMOVE_SS0_PIN)
 #define I2C_SS1_PIN                (0u == I2C_REMOVE_SS1_PIN)
 #define I2C_SS2_PIN                (0u == I2C_REMOVE_SS2_PIN)
 #define I2C_SS3_PIN                (0u == I2C_REMOVE_SS3_PIN)
@@ -105,13 +105,13 @@
     #include "I2C_uart_tx_i2c_sda_spi_miso.h"
 #endif /* (I2C_TX_SDA_MISO) */
 
-#if (I2C_CTS_SCLK_PIN)
-    #include "I2C_uart_cts_spi_sclk.h"
-#endif /* (I2C_CTS_SCLK) */
+#if (I2C_SCLK_PIN)
+    #include "I2C_spi_sclk.h"
+#endif /* (I2C_SCLK) */
 
-#if (I2C_RTS_SS0_PIN)
-    #include "I2C_uart_rts_spi_ss0.h"
-#endif /* (I2C_RTS_SS0_PIN) */
+#if (I2C_SS0_PIN)
+    #include "I2C_spi_ss0.h"
+#endif /* (I2C_SS0_PIN) */
 
 #if (I2C_SS1_PIN)
     #include "I2C_spi_ss1.h"
@@ -245,31 +245,31 @@
     #define I2C_TX_SDA_MISO_HSIOM_SEL_UART  (I2C_uart_tx_i2c_sda_spi_miso__0__HSIOM_UART)
 #endif /* (I2C_TX_SDA_MISO_PIN) */
 
-#if (I2C_CTS_SCLK_PIN)
-    #define I2C_CTS_SCLK_HSIOM_REG   (*(reg32 *) I2C_uart_cts_spi_sclk__0__HSIOM)
-    #define I2C_CTS_SCLK_HSIOM_PTR   ( (reg32 *) I2C_uart_cts_spi_sclk__0__HSIOM)
+#if (I2C_SCLK_PIN)
+    #define I2C_SCLK_HSIOM_REG   (*(reg32 *) I2C_spi_sclk__0__HSIOM)
+    #define I2C_SCLK_HSIOM_PTR   ( (reg32 *) I2C_spi_sclk__0__HSIOM)
     
-    #define I2C_CTS_SCLK_HSIOM_MASK      (I2C_uart_cts_spi_sclk__0__HSIOM_MASK)
-    #define I2C_CTS_SCLK_HSIOM_POS       (I2C_uart_cts_spi_sclk__0__HSIOM_SHIFT)
-    #define I2C_CTS_SCLK_HSIOM_SEL_GPIO  (I2C_uart_cts_spi_sclk__0__HSIOM_GPIO)
-    #define I2C_CTS_SCLK_HSIOM_SEL_I2C   (I2C_uart_cts_spi_sclk__0__HSIOM_I2C)
-    #define I2C_CTS_SCLK_HSIOM_SEL_SPI   (I2C_uart_cts_spi_sclk__0__HSIOM_SPI)
-    #define I2C_CTS_SCLK_HSIOM_SEL_UART  (I2C_uart_cts_spi_sclk__0__HSIOM_UART)
-#endif /* (I2C_CTS_SCLK_PIN) */
+    #define I2C_SCLK_HSIOM_MASK      (I2C_spi_sclk__0__HSIOM_MASK)
+    #define I2C_SCLK_HSIOM_POS       (I2C_spi_sclk__0__HSIOM_SHIFT)
+    #define I2C_SCLK_HSIOM_SEL_GPIO  (I2C_spi_sclk__0__HSIOM_GPIO)
+    #define I2C_SCLK_HSIOM_SEL_I2C   (I2C_spi_sclk__0__HSIOM_I2C)
+    #define I2C_SCLK_HSIOM_SEL_SPI   (I2C_spi_sclk__0__HSIOM_SPI)
+    #define I2C_SCLK_HSIOM_SEL_UART  (I2C_spi_sclk__0__HSIOM_UART)
+#endif /* (I2C_SCLK_PIN) */
 
-#if (I2C_RTS_SS0_PIN)
-    #define I2C_RTS_SS0_HSIOM_REG   (*(reg32 *) I2C_uart_rts_spi_ss0__0__HSIOM)
-    #define I2C_RTS_SS0_HSIOM_PTR   ( (reg32 *) I2C_uart_rts_spi_ss0__0__HSIOM)
+#if (I2C_SS0_PIN)
+    #define I2C_SS0_HSIOM_REG   (*(reg32 *) I2C_spi_ss0__0__HSIOM)
+    #define I2C_SS0_HSIOM_PTR   ( (reg32 *) I2C_spi_ss0__0__HSIOM)
     
-    #define I2C_RTS_SS0_HSIOM_MASK      (I2C_uart_rts_spi_ss0__0__HSIOM_MASK)
-    #define I2C_RTS_SS0_HSIOM_POS       (I2C_uart_rts_spi_ss0__0__HSIOM_SHIFT)
-    #define I2C_RTS_SS0_HSIOM_SEL_GPIO  (I2C_uart_rts_spi_ss0__0__HSIOM_GPIO)
-    #define I2C_RTS_SS0_HSIOM_SEL_I2C   (I2C_uart_rts_spi_ss0__0__HSIOM_I2C)
-    #define I2C_RTS_SS0_HSIOM_SEL_SPI   (I2C_uart_rts_spi_ss0__0__HSIOM_SPI)
+    #define I2C_SS0_HSIOM_MASK      (I2C_spi_ss0__0__HSIOM_MASK)
+    #define I2C_SS0_HSIOM_POS       (I2C_spi_ss0__0__HSIOM_SHIFT)
+    #define I2C_SS0_HSIOM_SEL_GPIO  (I2C_spi_ss0__0__HSIOM_GPIO)
+    #define I2C_SS0_HSIOM_SEL_I2C   (I2C_spi_ss0__0__HSIOM_I2C)
+    #define I2C_SS0_HSIOM_SEL_SPI   (I2C_spi_ss0__0__HSIOM_SPI)
 #if !(I2C_CY_SCBIP_V0 || I2C_CY_SCBIP_V1)
-    #define I2C_RTS_SS0_HSIOM_SEL_UART  (I2C_uart_rts_spi_ss0__0__HSIOM_UART)
+    #define I2C_SS0_HSIOM_SEL_UART  (I2C_spi_ss0__0__HSIOM_UART)
 #endif /* !(I2C_CY_SCBIP_V0 || I2C_CY_SCBIP_V1) */
-#endif /* (I2C_RTS_SS0_PIN) */
+#endif /* (I2C_SS0_PIN) */
 
 #if (I2C_SS1_PIN)
     #define I2C_SS1_HSIOM_REG  (*(reg32 *) I2C_spi_ss1__0__HSIOM)
@@ -511,8 +511,8 @@
 #define I2C_RX_WAKE_SCL_MOSI_PIN_INDEX   (0u)
 #define I2C_RX_SCL_MOSI_PIN_INDEX       (0u)
 #define I2C_TX_SDA_MISO_PIN_INDEX       (1u)
-#define I2C_CTS_SCLK_PIN_INDEX       (2u)
-#define I2C_RTS_SS0_PIN_INDEX       (3u)
+#define I2C_SCLK_PIN_INDEX       (2u)
+#define I2C_SS0_PIN_INDEX       (3u)
 #define I2C_SS1_PIN_INDEX                  (4u)
 #define I2C_SS2_PIN_INDEX                  (5u)
 #define I2C_SS3_PIN_INDEX                  (6u)
@@ -521,8 +521,8 @@
 #define I2C_RX_WAKE_SCL_MOSI_PIN_MASK ((uint32) 0x01u << I2C_RX_WAKE_SCL_MOSI_PIN_INDEX)
 #define I2C_RX_SCL_MOSI_PIN_MASK     ((uint32) 0x01u << I2C_RX_SCL_MOSI_PIN_INDEX)
 #define I2C_TX_SDA_MISO_PIN_MASK     ((uint32) 0x01u << I2C_TX_SDA_MISO_PIN_INDEX)
-#define I2C_CTS_SCLK_PIN_MASK     ((uint32) 0x01u << I2C_CTS_SCLK_PIN_INDEX)
-#define I2C_RTS_SS0_PIN_MASK     ((uint32) 0x01u << I2C_RTS_SS0_PIN_INDEX)
+#define I2C_SCLK_PIN_MASK     ((uint32) 0x01u << I2C_SCLK_PIN_INDEX)
+#define I2C_SS0_PIN_MASK     ((uint32) 0x01u << I2C_SS0_PIN_INDEX)
 #define I2C_SS1_PIN_MASK                ((uint32) 0x01u << I2C_SS1_PIN_INDEX)
 #define I2C_SS2_PIN_MASK                ((uint32) 0x01u << I2C_SS2_PIN_INDEX)
 #define I2C_SS3_PIN_MASK                ((uint32) 0x01u << I2C_SS3_PIN_INDEX)
@@ -556,12 +556,12 @@
                                                    I2C_uart_tx_i2c_sda_spi_miso_SHIFT))
 #endif /* (I2C_TX_SDA_MISO_PIN) */
 
-#if (I2C_RTS_SS0_PIN)
-    #define I2C_CHECK_RTS_SS0_PIN_USED \
+#if (I2C_SS0_PIN)
+    #define I2C_CHECK_SS0_PIN_USED \
                 (I2C_PIN_DM_ALG_HIZ != \
-                    I2C_GET_P4_PIN_DM(I2C_uart_rts_spi_ss0_PC, \
-                                                   I2C_uart_rts_spi_ss0_SHIFT))
-#endif /* (I2C_RTS_SS0_PIN) */
+                    I2C_GET_P4_PIN_DM(I2C_spi_ss0_PC, \
+                                                   I2C_spi_ss0_SHIFT))
+#endif /* (I2C_SS0_PIN) */
 
 /* Set bits-mask in register */
 #define I2C_SET_REGISTER_BITS(reg, mask, pos, mode) \
@@ -667,10 +667,10 @@
 #define I2C_REMOVE_MOSI_SCL_RX_PIN         I2C_REMOVE_RX_SCL_MOSI_PIN
 #define I2C_REMOVE_MISO_SDA_TX_PIN         I2C_REMOVE_TX_SDA_MISO_PIN
 #ifndef I2C_REMOVE_SCLK_PIN
-#define I2C_REMOVE_SCLK_PIN                I2C_REMOVE_CTS_SCLK_PIN
+#define I2C_REMOVE_SCLK_PIN                I2C_REMOVE_SCLK_PIN
 #endif /* I2C_REMOVE_SCLK_PIN */
 #ifndef I2C_REMOVE_SS0_PIN
-#define I2C_REMOVE_SS0_PIN                 I2C_REMOVE_RTS_SS0_PIN
+#define I2C_REMOVE_SS0_PIN                 I2C_REMOVE_SS0_PIN
 #endif /* I2C_REMOVE_SS0_PIN */
 
 /* Unconfigured pins */
@@ -678,10 +678,10 @@
 #define I2C_MOSI_SCL_RX_PIN        I2C_RX_SCL_MOSI_PIN
 #define I2C_MISO_SDA_TX_PIN        I2C_TX_SDA_MISO_PIN
 #ifndef I2C_SCLK_PIN
-#define I2C_SCLK_PIN               I2C_CTS_SCLK_PIN
+#define I2C_SCLK_PIN               I2C_SCLK_PIN
 #endif /* I2C_SCLK_PIN */
 #ifndef I2C_SS0_PIN
-#define I2C_SS0_PIN                I2C_RTS_SS0_PIN
+#define I2C_SS0_PIN                I2C_SS0_PIN
 #endif /* I2C_SS0_PIN */
 
 #if (I2C_MOSI_SCL_RX_WAKE_PIN)
@@ -713,19 +713,19 @@
 
 #if (I2C_SCLK_PIN)
     #ifndef I2C_SCLK_HSIOM_REG
-    #define I2C_SCLK_HSIOM_REG     I2C_CTS_SCLK_HSIOM_REG
-    #define I2C_SCLK_HSIOM_PTR     I2C_CTS_SCLK_HSIOM_PTR
-    #define I2C_SCLK_HSIOM_MASK    I2C_CTS_SCLK_HSIOM_MASK
-    #define I2C_SCLK_HSIOM_POS     I2C_CTS_SCLK_HSIOM_POS
+    #define I2C_SCLK_HSIOM_REG     I2C_SCLK_HSIOM_REG
+    #define I2C_SCLK_HSIOM_PTR     I2C_SCLK_HSIOM_PTR
+    #define I2C_SCLK_HSIOM_MASK    I2C_SCLK_HSIOM_MASK
+    #define I2C_SCLK_HSIOM_POS     I2C_SCLK_HSIOM_POS
     #endif /* I2C_SCLK_HSIOM_REG */
 #endif /* (I2C_SCLK_PIN) */
 
 #if (I2C_SS0_PIN)
     #ifndef I2C_SS0_HSIOM_REG
-    #define I2C_SS0_HSIOM_REG      I2C_RTS_SS0_HSIOM_REG
-    #define I2C_SS0_HSIOM_PTR      I2C_RTS_SS0_HSIOM_PTR
-    #define I2C_SS0_HSIOM_MASK     I2C_RTS_SS0_HSIOM_MASK
-    #define I2C_SS0_HSIOM_POS      I2C_RTS_SS0_HSIOM_POS
+    #define I2C_SS0_HSIOM_REG      I2C_SS0_HSIOM_REG
+    #define I2C_SS0_HSIOM_PTR      I2C_SS0_HSIOM_PTR
+    #define I2C_SS0_HSIOM_MASK     I2C_SS0_HSIOM_MASK
+    #define I2C_SS0_HSIOM_POS      I2C_SS0_HSIOM_POS
     #endif /* I2C_SS0_HSIOM_REG */
 #endif /* (I2C_SS0_PIN) */
 
@@ -733,20 +733,20 @@
 #define I2C_MOSI_SCL_RX_PIN_INDEX      I2C_RX_SCL_MOSI_PIN_INDEX
 #define I2C_MISO_SDA_TX_PIN_INDEX      I2C_TX_SDA_MISO_PIN_INDEX
 #ifndef I2C_SCLK_PIN_INDEX
-#define I2C_SCLK_PIN_INDEX             I2C_CTS_SCLK_PIN_INDEX
+#define I2C_SCLK_PIN_INDEX             I2C_SCLK_PIN_INDEX
 #endif /* I2C_SCLK_PIN_INDEX */
 #ifndef I2C_SS0_PIN_INDEX
-#define I2C_SS0_PIN_INDEX              I2C_RTS_SS0_PIN_INDEX
+#define I2C_SS0_PIN_INDEX              I2C_SS0_PIN_INDEX
 #endif /* I2C_SS0_PIN_INDEX */
 
 #define I2C_MOSI_SCL_RX_WAKE_PIN_MASK I2C_RX_WAKE_SCL_MOSI_PIN_MASK
 #define I2C_MOSI_SCL_RX_PIN_MASK      I2C_RX_SCL_MOSI_PIN_MASK
 #define I2C_MISO_SDA_TX_PIN_MASK      I2C_TX_SDA_MISO_PIN_MASK
 #ifndef I2C_SCLK_PIN_MASK
-#define I2C_SCLK_PIN_MASK             I2C_CTS_SCLK_PIN_MASK
+#define I2C_SCLK_PIN_MASK             I2C_SCLK_PIN_MASK
 #endif /* I2C_SCLK_PIN_MASK */
 #ifndef I2C_SS0_PIN_MASK
-#define I2C_SS0_PIN_MASK              I2C_RTS_SS0_PIN_MASK
+#define I2C_SS0_PIN_MASK              I2C_SS0_PIN_MASK
 #endif /* I2C_SS0_PIN_MASK */
 
 #endif /* (CY_SCB_PINS_I2C_H) */

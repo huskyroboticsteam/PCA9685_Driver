@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: SclPin.h  
+* File Name: I2C_sda.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_SclPin_ALIASES_H) /* Pins SclPin_ALIASES_H */
-#define CY_PINS_SclPin_ALIASES_H
+#if !defined(CY_PINS_I2C_sda_ALIASES_H) /* Pins I2C_sda_ALIASES_H */
+#define CY_PINS_I2C_sda_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -26,17 +26,17 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define SclPin_0			(SclPin__0__PC)
-#define SclPin_0_PS		(SclPin__0__PS)
-#define SclPin_0_PC		(SclPin__0__PC)
-#define SclPin_0_DR		(SclPin__0__DR)
-#define SclPin_0_SHIFT	(SclPin__0__SHIFT)
-#define SclPin_0_INTR	((uint16)((uint16)0x0003u << (SclPin__0__SHIFT*2u)))
+#define I2C_sda_0			(I2C_sda__0__PC)
+#define I2C_sda_0_PS		(I2C_sda__0__PS)
+#define I2C_sda_0_PC		(I2C_sda__0__PC)
+#define I2C_sda_0_DR		(I2C_sda__0__DR)
+#define I2C_sda_0_SHIFT	(I2C_sda__0__SHIFT)
+#define I2C_sda_0_INTR	((uint16)((uint16)0x0003u << (I2C_sda__0__SHIFT*2u)))
 
-#define SclPin_INTR_ALL	 ((uint16)(SclPin_0_INTR))
+#define I2C_sda_INTR_ALL	 ((uint16)(I2C_sda_0_INTR))
 
 
-#endif /* End Pins SclPin_ALIASES_H */
+#endif /* End Pins I2C_sda_ALIASES_H */
 
 
 /* [] END OF FILE */

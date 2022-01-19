@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: SclPin.c  
+* File Name: I2C_sda.c  
 * Version 2.20
 *
 * Description:
@@ -13,35 +13,35 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "SclPin.h"
+#include "I2C_sda.h"
 
 
-#if defined(SclPin__PC)
-    #define SclPin_SetP4PinDriveMode(shift, mode)  \
+#if defined(I2C_sda__PC)
+    #define I2C_sda_SetP4PinDriveMode(shift, mode)  \
     do { \
-        SclPin_PC =   (SclPin_PC & \
-                                (uint32)(~(uint32)(SclPin_DRIVE_MODE_IND_MASK << \
-                                (SclPin_DRIVE_MODE_BITS * (shift))))) | \
+        I2C_sda_PC =   (I2C_sda_PC & \
+                                (uint32)(~(uint32)(I2C_sda_DRIVE_MODE_IND_MASK << \
+                                (I2C_sda_DRIVE_MODE_BITS * (shift))))) | \
                                 (uint32)((uint32)(mode) << \
-                                (SclPin_DRIVE_MODE_BITS * (shift))); \
+                                (I2C_sda_DRIVE_MODE_BITS * (shift))); \
     } while (0)
 #else
     #if (CY_PSOC4_4200L)
-        #define SclPin_SetP4PinDriveMode(shift, mode)  \
+        #define I2C_sda_SetP4PinDriveMode(shift, mode)  \
         do { \
-            SclPin_USBIO_CTRL_REG = (SclPin_USBIO_CTRL_REG & \
-                                    (uint32)(~(uint32)(SclPin_DRIVE_MODE_IND_MASK << \
-                                    (SclPin_DRIVE_MODE_BITS * (shift))))) | \
+            I2C_sda_USBIO_CTRL_REG = (I2C_sda_USBIO_CTRL_REG & \
+                                    (uint32)(~(uint32)(I2C_sda_DRIVE_MODE_IND_MASK << \
+                                    (I2C_sda_DRIVE_MODE_BITS * (shift))))) | \
                                     (uint32)((uint32)(mode) << \
-                                    (SclPin_DRIVE_MODE_BITS * (shift))); \
+                                    (I2C_sda_DRIVE_MODE_BITS * (shift))); \
         } while (0)
     #endif
 #endif
   
 
-#if defined(SclPin__PC) || (CY_PSOC4_4200L) 
+#if defined(I2C_sda__PC) || (CY_PSOC4_4200L) 
     /*******************************************************************************
-    * Function Name: SclPin_SetDriveMode
+    * Function Name: I2C_sda_SetDriveMode
     ****************************************************************************//**
     *
     * \brief Sets the drive mode for each of the Pins component's pins.
@@ -67,17 +67,17 @@
     *  APIs (primary method) or disable interrupts around this function.
     *
     * \funcusage
-    *  \snippet SclPin_SUT.c usage_SclPin_SetDriveMode
+    *  \snippet I2C_sda_SUT.c usage_I2C_sda_SetDriveMode
     *******************************************************************************/
-    void SclPin_SetDriveMode(uint8 mode)
+    void I2C_sda_SetDriveMode(uint8 mode)
     {
-		SclPin_SetP4PinDriveMode(SclPin__0__SHIFT, mode);
+		I2C_sda_SetP4PinDriveMode(I2C_sda__0__SHIFT, mode);
     }
 #endif
 
 
 /*******************************************************************************
-* Function Name: SclPin_Write
+* Function Name: I2C_sda_Write
 ****************************************************************************//**
 *
 * \brief Writes the value to the physical port (data output register), masking
@@ -106,18 +106,18 @@
 *  this function.
 *
 * \funcusage
-*  \snippet SclPin_SUT.c usage_SclPin_Write
+*  \snippet I2C_sda_SUT.c usage_I2C_sda_Write
 *******************************************************************************/
-void SclPin_Write(uint8 value)
+void I2C_sda_Write(uint8 value)
 {
-    uint8 drVal = (uint8)(SclPin_DR & (uint8)(~SclPin_MASK));
-    drVal = (drVal | ((uint8)(value << SclPin_SHIFT) & SclPin_MASK));
-    SclPin_DR = (uint32)drVal;
+    uint8 drVal = (uint8)(I2C_sda_DR & (uint8)(~I2C_sda_MASK));
+    drVal = (drVal | ((uint8)(value << I2C_sda_SHIFT) & I2C_sda_MASK));
+    I2C_sda_DR = (uint32)drVal;
 }
 
 
 /*******************************************************************************
-* Function Name: SclPin_Read
+* Function Name: I2C_sda_Read
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port (pin status register) and masks 
@@ -131,16 +131,16 @@ void SclPin_Write(uint8 value)
 *  The current value for the pins in the component as a right justified number.
 *
 * \funcusage
-*  \snippet SclPin_SUT.c usage_SclPin_Read  
+*  \snippet I2C_sda_SUT.c usage_I2C_sda_Read  
 *******************************************************************************/
-uint8 SclPin_Read(void)
+uint8 I2C_sda_Read(void)
 {
-    return (uint8)((SclPin_PS & SclPin_MASK) >> SclPin_SHIFT);
+    return (uint8)((I2C_sda_PS & I2C_sda_MASK) >> I2C_sda_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: SclPin_ReadDataReg
+* Function Name: I2C_sda_ReadDataReg
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port's data output register and masks 
@@ -149,8 +149,8 @@ uint8 SclPin_Read(void)
 *
 * The data output register controls the signal applied to the physical pin in 
 * conjunction with the drive mode parameter. This is not the same as the 
-* preferred SclPin_Read() API because the 
-* SclPin_ReadDataReg() reads the data register instead of the status 
+* preferred I2C_sda_Read() API because the 
+* I2C_sda_ReadDataReg() reads the data register instead of the status 
 * register. For output pins this is a useful function to determine the value 
 * just written to the pin.
 *
@@ -159,16 +159,16 @@ uint8 SclPin_Read(void)
 *  justified number for the component instance.
 *
 * \funcusage
-*  \snippet SclPin_SUT.c usage_SclPin_ReadDataReg 
+*  \snippet I2C_sda_SUT.c usage_I2C_sda_ReadDataReg 
 *******************************************************************************/
-uint8 SclPin_ReadDataReg(void)
+uint8 I2C_sda_ReadDataReg(void)
 {
-    return (uint8)((SclPin_DR & SclPin_MASK) >> SclPin_SHIFT);
+    return (uint8)((I2C_sda_DR & I2C_sda_MASK) >> I2C_sda_SHIFT);
 }
 
 
 /*******************************************************************************
-* Function Name: SclPin_SetInterruptMode
+* Function Name: I2C_sda_SetInterruptMode
 ****************************************************************************//**
 *
 * \brief Configures the interrupt mode for each of the Pins component's
@@ -181,12 +181,12 @@ uint8 SclPin_ReadDataReg(void)
 * \param position
 *  The pin position as listed in the Pins component. You may OR these to be 
 *  able to configure the interrupt mode of multiple pins within a Pins 
-*  component. Or you may use SclPin_INTR_ALL to configure the
+*  component. Or you may use I2C_sda_INTR_ALL to configure the
 *  interrupt mode of all the pins in the Pins component.       
-*  - SclPin_0_INTR       (First pin in the list)
-*  - SclPin_1_INTR       (Second pin in the list)
+*  - I2C_sda_0_INTR       (First pin in the list)
+*  - I2C_sda_1_INTR       (Second pin in the list)
 *  - ...
-*  - SclPin_INTR_ALL     (All pins in Pins component)
+*  - I2C_sda_INTR_ALL     (All pins in Pins component)
 *
 * \param mode
 *  Interrupt mode for the selected pins. Valid options are documented in
@@ -202,19 +202,19 @@ uint8 SclPin_ReadDataReg(void)
 *  port.
 *
 * \funcusage
-*  \snippet SclPin_SUT.c usage_SclPin_SetInterruptMode
+*  \snippet I2C_sda_SUT.c usage_I2C_sda_SetInterruptMode
 *******************************************************************************/
-void SclPin_SetInterruptMode(uint16 position, uint16 mode)
+void I2C_sda_SetInterruptMode(uint16 position, uint16 mode)
 {
     uint32 intrCfg;
     
-    intrCfg =  SclPin_INTCFG & (uint32)(~(uint32)position);
-    SclPin_INTCFG = intrCfg | ((uint32)position & (uint32)mode);
+    intrCfg =  I2C_sda_INTCFG & (uint32)(~(uint32)position);
+    I2C_sda_INTCFG = intrCfg | ((uint32)position & (uint32)mode);
 }
 
 
 /*******************************************************************************
-* Function Name: SclPin_ClearInterrupt
+* Function Name: I2C_sda_ClearInterrupt
 ****************************************************************************//**
 *
 * \brief Clears any active interrupts attached with the component and returns 
@@ -231,13 +231,13 @@ void SclPin_SetInterruptMode(uint16 position, uint16 mode)
 *  those associated with the Pins component.
 *
 * \funcusage
-*  \snippet SclPin_SUT.c usage_SclPin_ClearInterrupt
+*  \snippet I2C_sda_SUT.c usage_I2C_sda_ClearInterrupt
 *******************************************************************************/
-uint8 SclPin_ClearInterrupt(void)
+uint8 I2C_sda_ClearInterrupt(void)
 {
-	uint8 maskedStatus = (uint8)(SclPin_INTSTAT & SclPin_MASK);
-	SclPin_INTSTAT = maskedStatus;
-    return maskedStatus >> SclPin_SHIFT;
+	uint8 maskedStatus = (uint8)(I2C_sda_INTSTAT & I2C_sda_MASK);
+	I2C_sda_INTSTAT = maskedStatus;
+    return maskedStatus >> I2C_sda_SHIFT;
 }
 
 

@@ -14,8 +14,10 @@
 #define PCA9685ADDY (0x40)
 
 /* Transfer statuses */
-#define TRANSFER_CMPLT      (0x00u)
+#define TRANSFER_CMPLT (0x00u)
 #define TRANSFER_ERROR      (0xFFu)
+
+#define DELAYTIME 1
 
 #define LED0 0
 #define LED1 1
@@ -33,43 +35,85 @@
 #define LED13 13
 #define LED14 14
 #define LED15 15
-#define bufferSize 2
-#define RD_BUFFER_SIZE      (3u)
+#define bufferSize 5
+//#define RD_BUFFER_SIZE      (3u)
+
+ /*Prototype*/
+    void ToggleLed(uint32_t PCA9685addy, int Ledn, int dutyCycle);
+    uint8 TurnOnTimeL();
+    uint8 TurnOnTimeH();
+    uint8 TurnOffTimeH(int dutyCycle);
+    uint8 TurnOffTimeL(int dutyCycle);
+    uint32 writeBuffer(uint8 buff[],uint32_t PCA9685Address);
 
 
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
-    int errorFlag;
+   // int errorFlag; 
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     I2C_Start();
     I2C_Enable();
     
-    /*Prototype*/
-    void ToggleLed(uint32_t PCA9685addy, int Ledn, int dutyCycle);
-    uint8 DetermineOnTime(int dutyCycle);
-    uint32 writeBuffer(uint8* buffer,uint32_t PCA9685Address, uint32_t mode);
-    
-   // I2C_I2CMasterWriteBuf();
-
+    ToggleLed(PCA9685ADDY,LED0,50);
     for(;;)
     {
         /* Place your application code here. */
     }
 }
 
-uint8 TurnOnTime(int dutyCycle){
-           dutyCycle = (4095*dutyCycle)/100;
-        return dutyCycle;
+/*Casting delayTime as uint8_t gets rid of the four left most significant bits*/
+uint8 TurnOnTimeL(){
+           int delayTime = DELAYTIME; /*This ammounts to 41 ticks before turn on*/
+           //dutyCycle = (4095*dutyCycle)/100;
+            delayTime = (4095*delayTime)/100 - 1;
+        return delayTime;
 }
 
-uint32 writeBuffer(uint8* buffer, uint32_t PCA9685Address, uint32_t mode){
+/*Shifting to the right keeps the four most signifcant bits but gets rid of 8 least significant digits */
+uint8 TurnOnTimeH(){
+    int delayTime = DELAYTIME;
+    delayTime = (4095*delayTime)/100 - 1;
+    delayTime = delayTime >> 8;
+        return delayTime;
+}
+
+uint8 TurnOffTimeL(int dutyCycle){
+    int delayTime = DELAYTIME;
+    int offTime=0;
+    if(delayTime+dutyCycle<=100){
+    delayTime = (4095*delayTime)/100 - 1;
+    dutyCycle = (4095*dutyCycle)/100;
+    offTime = delayTime + dutyCycle;
+    } else {
+    delayTime = (4095*delayTime)/100 - 1;
+    dutyCycle = (4095*dutyCycle)/100;
+    offTime = delayTime + dutyCycle - 4096;
+    offTime = offTime;
+    }
+       return offTime;}
+
+uint8 TurnOffTimeH(int dutyCycle){
+    int delayTime = DELAYTIME;
+    int offTime = 0; //initialized because program giving a warning
+    if(delayTime+dutyCycle<=100){
+    delayTime = (4095*delayTime)/100 - 1;
+    dutyCycle = (4095*dutyCycle)/100;
+    offTime = delayTime + dutyCycle;
+    } else {
+    delayTime = (4095*delayTime)/100 - 1;
+    dutyCycle = (4095*dutyCycle)/100;
+    offTime = delayTime + dutyCycle - offTime;
+    }
+       return offTime >> 8;}
+
+uint32 writeBuffer(uint8 buff[], uint32_t PCA9685Address){
      uint32 status = TRANSFER_ERROR;
     
     (void) I2C_I2CMasterClearStatus();
-         if( I2C_I2C_MSTR_NO_ERROR ==  I2C_I2CMasterWriteBuf(PCA9685Address, buffer,
-                                                            bufferSize, mode)){
+         if( I2C_I2C_MSTR_NO_ERROR ==  I2C_I2CMasterWriteBuf(PCA9685Address, buff,
+                                                            bufferSize, I2C_I2C_MODE_COMPLETE_XFER)){
      /* If I2C write started without errors, 
          * wait until I2C Master completes write transfer */
         while (0u == (I2C_I2CMasterStatus() & I2C_I2C_MSTAT_WR_CMPLT))
@@ -90,19 +134,84 @@ uint32 writeBuffer(uint8* buffer, uint32_t PCA9685Address, uint32_t mode){
     return status;}
 
 void ToggleLed(uint32_t PCA9685Address, int ledN, int dutyCycle){
-     uint32 status = TRANSFER_ERROR;
-
+    //uint32 status = TRANSFER_ERROR;
     uint8 buffer[bufferSize] = {0,0};
+    uint8 registerNum = 0;
+    
+    
     switch (ledN){
     case LED0: 
-       buffer[0] = (0x06);
-       buffer[1] = TurnOnTime(dutyCycle);
-       writeBuffer(buffer, PCA9685Address, I2C_I2C_MODE_NO_STOP);
-       buffer[1] = TurnOnTime(dutyCycle);
-       //buffer[1] = TurnOffTime(dutyCyle);
-   
+       registerNum = 0x06;
+        break;
+    case LED1:
+       registerNum = 0x0A;  
+        break;
+    case LED2:
+       registerNum = (0x0E);
+        break;
+    case LED3:
+       registerNum = (0x12);   
+        break;
+    case LED4:
+       registerNum = (0x16);    
+       break;
+    case LED5:
+       registerNum = (0x1A);
+       break;
+    case LED6:
+       registerNum = (0x1E);
+       break;
+    case LED7:
+       registerNum = (0x22);
+       break;
+    case LED8:
+       registerNum = (0x26);
+       break;
+    case LED9:
+       registerNum = (0x2A);
+       break;
+    case LED10:
+       registerNum = (0x2E);
+       break;
+    case LED11:
+       registerNum = (0x32);
+       break;
+    case LED12:
+       registerNum = (0x3C);
+       break;
+    case LED13:
+       registerNum = (0x36);
+       break;
+    case LED14:
+       registerNum = (0x3E);
+       break;
+    case LED15:
+       registerNum = (0x42);
+       break;
+    default:
+      registerNum = 0x06;
     }
-       
+       //buffer[0] = PCA9685ADDY;
+       buffer[0] = registerNum;
+       buffer[1] = TurnOnTimeL();
+       writeBuffer(buffer, PCA9685Address);
+    
+      // buffer[0] = PCA9685ADDY;
+       buffer[0] = (registerNum+1);
+       buffer[1] = TurnOnTimeH();
+       writeBuffer(buffer, PCA9685Address);
+    
+       //buffer[0] = PCA9685ADDY;
+       buffer[0] = (registerNum+2);
+       buffer[1] = TurnOffTimeL(dutyCycle);
+       writeBuffer(buffer, PCA9685Address);
+    
+       //buffer[0] = PCA9685ADDY;
+       buffer[0] = (registerNum+3);
+       buffer[1] = TurnOffTimeH(dutyCycle);
+       writeBuffer(buffer, PCA9685Address);
+    
+     
 }
 
 ;
