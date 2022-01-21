@@ -35,18 +35,22 @@
 #define LED13 13
 #define LED14 14
 #define LED15 15
-#define bufferSize 5
+#define bufferSize 2
 //#define RD_BUFFER_SIZE      (3u)
 
  /*Prototype*/
-    void ToggleLed(uint32_t PCA9685addy, int Ledn, int dutyCycle);
+    void ToggleLed(int Ledn, int dutyCycle);
     uint8 TurnOnTimeL();
     uint8 TurnOnTimeH();
     uint8 TurnOffTimeH(int dutyCycle);
     uint8 TurnOffTimeL(int dutyCycle);
     uint32 writeBuffer(uint8 buff[],uint32_t PCA9685Address);
 
-
+void writeByte(unsigned char chip_register, unsigned char value){
+     uint8 buf[2] = {chip_register, value};
+     writeBuffer(buf, PCA9685ADDY);
+}
+    
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
@@ -55,13 +59,28 @@ int main(void)
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     I2C_Start();
     I2C_Enable();
-    
-    ToggleLed(PCA9685ADDY,LED0,50);
+    //uint8 mode_buf[2] = {0,0b10000000};
+    //writeBuffer(mode_buf, PCA9685ADDY);
     for(;;)
     {
-        /* Place your application code here. */
+        //writeByte(0x06,0);
+        //writeByte(0x07,0);
+        //writeByte(0x08,0xFE);
+        //writeByte(0x09,0x07);
+        //ToggleLed(LED0,90);
+        for(int i =0; i<100; i++){
+            ToggleLed(LED0, i);
+            CyDelay(1);
+        }
+        for(int i =99; i>=0; i--){
+            ToggleLed(LED0, i);
+            CyDelay(1);
+        }
     }
 }
+
+
+
 
 /*Casting delayTime as uint8_t gets rid of the four left most significant bits*/
 uint8 TurnOnTimeL(){
@@ -108,7 +127,7 @@ uint8 TurnOffTimeH(int dutyCycle){
     }
        return offTime >> 8;}
 
-uint32 writeBuffer(uint8 buff[], uint32_t PCA9685Address){
+uint32 writeBuffer(uint8 *buff, uint32_t PCA9685Address){
      uint32 status = TRANSFER_ERROR;
     
     (void) I2C_I2CMasterClearStatus();
@@ -133,9 +152,8 @@ uint32 writeBuffer(uint8 buff[], uint32_t PCA9685Address){
     
     return status;}
 
-void ToggleLed(uint32_t PCA9685Address, int ledN, int dutyCycle){
+void ToggleLed(int ledN, int dutyCycle){
     //uint32 status = TRANSFER_ERROR;
-    uint8 buffer[bufferSize] = {0,0};
     uint8 registerNum = 0;
     
     
@@ -191,30 +209,12 @@ void ToggleLed(uint32_t PCA9685Address, int ledN, int dutyCycle){
     default:
       registerNum = 0x06;
     }
-       //buffer[0] = PCA9685ADDY;
-       buffer[0] = registerNum;
-       buffer[1] = TurnOnTimeL();
-       writeBuffer(buffer, PCA9685Address);
-    
-      // buffer[0] = PCA9685ADDY;
-       buffer[0] = (registerNum+1);
-       buffer[1] = TurnOnTimeH();
-       writeBuffer(buffer, PCA9685Address);
-    
-       //buffer[0] = PCA9685ADDY;
-       buffer[0] = (registerNum+2);
-       buffer[1] = TurnOffTimeL(dutyCycle);
-       writeBuffer(buffer, PCA9685Address);
-    
-       //buffer[0] = PCA9685ADDY;
-       buffer[0] = (registerNum+3);
-       buffer[1] = TurnOffTimeH(dutyCycle);
-       writeBuffer(buffer, PCA9685Address);
+       
+    writeByte(registerNum, TurnOnTimeL());
+    writeByte(registerNum+1, TurnOnTimeH());
+    writeByte(registerNum+2, TurnOffTimeL(dutyCycle));
+    writeByte(registerNum+3, TurnOffTimeH(dutyCycle));
     
      
 }
 
-;
-
-
-/* [] END OF FILE */

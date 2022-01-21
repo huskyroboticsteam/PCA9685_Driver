@@ -1,14 +1,6 @@
---------------- Build Started: 01/18/2022 18:30:58 Project: I2C bus PWM Controller, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Build Started: 01/20/2022 19:23:18 Project: I2C bus PWM Controller, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 The code generation step is up to date.
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/main.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c main.c -o .\CortexM0\ARM_GCC_541\Debug\main.o
-main.c: In function 'main':
-main.c:43:9: warning: unused variable 'errorFlag' [-Wunused-variable]
-     int errorFlag;
-         ^
-main.c: In function 'ToggleLed':
-main.c:95:13: warning: unused variable 'status' [-Wunused-variable]
-      uint32 status = TRANSFER_ERROR;
-             ^
 arm-none-eabi-ar.exe -rs ".\CortexM0\ARM_GCC_541\Debug\I2C bus PWM Controller.a" .\CortexM0\ARM_GCC_541\Debug\I2C.o .\CortexM0\ARM_GCC_541\Debug\I2C_I2C_INT.o .\CortexM0\ARM_GCC_541\Debug\I2C_I2C.o .\CortexM0\ARM_GCC_541\Debug\I2C_I2C_BOOT.o .\CortexM0\ARM_GCC_541\Debug\I2C_I2C_MASTER.o .\CortexM0\ARM_GCC_541\Debug\I2C_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_BOOT.o .\CortexM0\ARM_GCC_541\Debug\I2C_SCBCLK.o .\CortexM0\ARM_GCC_541\Debug\I2C_SCB_IRQ.o .\CortexM0\ARM_GCC_541\Debug\CyFlash.o .\CortexM0\ARM_GCC_541\Debug\CyLib.o .\CortexM0\ARM_GCC_541\Debug\cyPm.o .\CortexM0\ARM_GCC_541\Debug\cyutils.o .\CortexM0\ARM_GCC_541\Debug\CyLFClk.o .\CortexM0\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM0\ARM_GCC_541\Debug\I2C_sda.o .\CortexM0\ARM_GCC_541\Debug\I2C_sda_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_scl.o .\CortexM0\ARM_GCC_541\Debug\I2C_scl_PM.o .\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o
 arm-none-eabi-ar.exe: creating .\CortexM0\ARM_GCC_541\Debug\I2C bus PWM Controller.a
 arm-none-eabi-gcc.exe -Wl,--start-group -o "C:\Users\davis\Documents\PSoC Creator\PCA9685_Driver\I2C bus PWM Controller.cydsn\CortexM0\ARM_GCC_541\Debug\I2C bus PWM Controller.elf" .\CortexM0\ARM_GCC_541\Debug\main.o .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM0\ARM_GCC_541\Debug\cymetadata.o .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o ".\CortexM0\ARM_GCC_541\Debug\I2C bus PWM Controller.a" -mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 "-Wl,-Map,.\CortexM0\ARM_GCC_541\Debug/I2C bus PWM Controller.map" -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
@@ -17,6 +9,6 @@ No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S "C:\Users\davis\Documents\PSoC Creator\PCA9685_Driver\I2C bus PWM Controller.cydsn\CortexM0\ARM_GCC_541\Debug\I2C bus PWM Controller.elf"
-Flash used: 3766 of 32768 bytes (11.5%).
+Flash used: 4600 of 32768 bytes (14.0%).
 SRAM used: 2608 of 4096 bytes (63.7%). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Build Succeeded: 01/18/2022 18:30:59 ---------------
+--------------- Build Succeeded: 01/20/2022 19:23:19 ---------------

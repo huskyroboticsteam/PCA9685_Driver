@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Husky_Robotics_Firmware\I2C bus PWM Controller\Source Files\main.c">
 <ExpandedNodeIds>
 <v>Husky_Robotics_Firmware</v>
 <v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01</v>
@@ -154,38 +154,6 @@
 <v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01</v>
 <v>Husky_Robotics_Firmware\Homework_1</v>
 <v>Husky_Robotics_Firmware\I2C bus PWM Controller</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_BOOT.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_I2C.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_I2C_BOOT.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_I2C_INT.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_I2C_MASTER.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_PM.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_SCB_IRQ.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_SCBCLK.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_scl.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_scl_PM.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_sda.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_sda_PM.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\I2C bus PWM Controller.elf</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\I2C bus PWM Controller.hex</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\I2C bus PWM Controller.map</v>
-<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.gpdsc</v>
 <v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.rpt</v>
 <v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller_timing.html</v>
 <v>Husky_Robotics_Firmware\I2C_Master_High_Level01</v>
@@ -228,7 +196,18 @@
 <project v=".\CE220818_I2C_Master_High_Level01.cydsn\CE220818_I2C_Master_High_Level01.cyprj" />
 <project v=".\I2C_Master_High_Level01.cydsn\I2C_Master_High_Level01.cyprj" />
 </Unloaded>
-<OpenDocs />
+<OpenDocs>
+<name v=".\I2C bus PWM Controller.cydsn\main.c" />
+<name v=".\I2C bus PWM Controller.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\I2C bus PWM Controller.cydsn\I2C bus PWM Controller.cydwr" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1567, 823" SelectedTabbedMdiWindow="09151652-cc25-49eb-94ad-256615954156"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="601d7438-0df5-4c65-973b-eaad6f0e5381" /><DocumentWindow Key="C:\Users\davis\Documents\PSoC Creator\PCA9685_Driver\I2C bus PWM Controller.cydsn\main.c" Guid="09151652-cc25-49eb-94ad-256615954156" /><DocumentWindow Key="C:\Users\davis\Documents\PSoC Creator\PCA9685_Driver\I2C bus PWM Controller.cydsn\TopDesign\TopDesign.cysch" Guid="638edc40-944b-410d-a7d9-5e61293da7cf" /><DocumentWindow Key="C:\Users\davis\Documents\PSoC Creator\PCA9685_Driver\I2C bus PWM Controller.cydsn\I2C bus PWM Controller.cydwr" Guid="a540b239-5df0-4267-8155-ae049ac3e73e" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
