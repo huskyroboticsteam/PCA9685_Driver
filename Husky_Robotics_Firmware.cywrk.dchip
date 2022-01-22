@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Husky_Robotics_Firmware">
+<ExpandedNodeIds>
+<v>Husky_Robotics_Firmware</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\TopDesign</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CE220818_I2C_Master_High_Level01.cydwr\Pins</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CE220818_I2C_Master_High_Level01.cydwr\Analog</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CE220818_I2C_Master_High_Level01.cydwr\DMA</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CE220818_I2C_Master_High_Level01.cydwr\Clocks</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CE220818_I2C_Master_High_Level01.cydwr\Interrupts</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CE220818_I2C_Master_High_Level01.cydwr\System</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CE220818_I2C_Master_High_Level01.cydwr\Directives</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CM0p (Core 0)</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CM0p (Core 0)\Header Files</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CM0p (Core 0)\Source Files</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CM0p (Core 0)\Source Files\main_cm0p.c</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CM4 (Core 1)</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CM4 (Core 1)\Header Files</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CM4 (Core 1)\Source Files</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CM4 (Core 1)\Source Files\main_cm4.c</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\Shared Files</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\Shared Files\cyapicallbacks.h</v>
+<v>Husky_Robotics_Firmware\Homework_1\TopDesign</v>
+<v>Husky_Robotics_Firmware\Homework_1\Homework_1.cydwr</v>
+<v>Husky_Robotics_Firmware\Homework_1\Homework_1.cydwr\Pins</v>
+<v>Husky_Robotics_Firmware\Homework_1\Homework_1.cydwr\Analog</v>
+<v>Husky_Robotics_Firmware\Homework_1\Homework_1.cydwr\DMA</v>
+<v>Husky_Robotics_Firmware\Homework_1\Homework_1.cydwr\Clocks</v>
+<v>Husky_Robotics_Firmware\Homework_1\Homework_1.cydwr\Interrupts</v>
+<v>Husky_Robotics_Firmware\Homework_1\Homework_1.cydwr\System</v>
+<v>Husky_Robotics_Firmware\Homework_1\Homework_1.cydwr\Directives</v>
+<v>Husky_Robotics_Firmware\Homework_1\Homework_1.cydwr\Flash Security</v>
+<v>Husky_Robotics_Firmware\Homework_1\Header Files</v>
+<v>Husky_Robotics_Firmware\Homework_1\Header Files\CANCommon.h</v>
+<v>Husky_Robotics_Firmware\Homework_1\Header Files\CANGPIO.h</v>
+<v>Husky_Robotics_Firmware\Homework_1\Header Files\CANLibrary.h</v>
+<v>Husky_Robotics_Firmware\Homework_1\Header Files\CANLocalization.h</v>
+<v>Husky_Robotics_Firmware\Homework_1\Header Files\CANMotorUnit.h</v>
+<v>Husky_Robotics_Firmware\Homework_1\Header Files\CANPacket.h</v>
+<v>Husky_Robotics_Firmware\Homework_1\Header Files\CANPower.h</v>
+<v>Husky_Robotics_Firmware\Homework_1\Header Files\CANScience.h</v>
+<v>Husky_Robotics_Firmware\Homework_1\Header Files\CANSerialNumbers.h</v>
+<v>Husky_Robotics_Firmware\Homework_1\Header Files\cyapicallbacks.h</v>
+<v>Husky_Robotics_Firmware\Homework_1\Header Files\Port.h</v>
+<v>Husky_Robotics_Firmware\Homework_1\Source Files</v>
+<v>Husky_Robotics_Firmware\Homework_1\Source Files\CANCommon.c</v>
+<v>Husky_Robotics_Firmware\Homework_1\Source Files\CANGPIO.c</v>
+<v>Husky_Robotics_Firmware\Homework_1\Source Files\CANLocalization.c</v>
+<v>Husky_Robotics_Firmware\Homework_1\Source Files\CANMotorUnit.c</v>
+<v>Husky_Robotics_Firmware\Homework_1\Source Files\CANPacket.c</v>
+<v>Husky_Robotics_Firmware\Homework_1\Source Files\CANPower.c</v>
+<v>Husky_Robotics_Firmware\Homework_1\Source Files\CANScience.c</v>
+<v>Husky_Robotics_Firmware\Homework_1\Source Files\main.c</v>
+<v>Husky_Robotics_Firmware\Homework_1\Source Files\PortPSOC_CY8C4248AZI_L485.c</v>
+<v>Husky_Robotics_Firmware\Homework_1\Generated_Source\PSoC4</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\TopDesign</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr\Pins</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr\Analog</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr\DMA</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr\Clocks</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr\Interrupts</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr\System</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr\Directives</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr\Flash Security</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\Header Files</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\Header Files\cyapicallbacks.h</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\Source Files</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\Source Files\main.c</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\Generated_Source\PSoC4</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.cydwr</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.cydwr\Pins</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.cydwr\Analog</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.cydwr\Clocks</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.cydwr\Interrupts</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.cydwr\System</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.cydwr\Directives</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.cydwr\Flash Security</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\Header Files</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\Header Files\cyapicallbacks.h</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\Source Files</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\Source Files\main.c</v>
+<v>Husky_Robotics_Firmware\CE220818.pdf</v>
+<v>Husky_Robotics_Firmware\CE222306_PSoC_4_I2CMaster.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Husky_Robotics_Firmware</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01</v>
+<v>Husky_Robotics_Firmware\Homework_1</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\TopDesign</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr\Pins</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr\Analog</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr\DMA</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr\Clocks</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr\Interrupts</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr\System</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr\Directives</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.cydwr\Flash Security</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\Header Files</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\Header Files\cyapicallbacks.h</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\Source Files</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\Source Files\main.c</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\Generated_Source</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.cydwr</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.cydwr\Pins</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.cydwr\Analog</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.cydwr\Clocks</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.cydwr\Interrupts</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.cydwr\System</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.cydwr\Directives</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.cydwr\Flash Security</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\Header Files</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\Header Files\cyapicallbacks.h</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\Source Files</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\Source Files\main.c</v>
+<v>Husky_Robotics_Firmware\CE220818.pdf</v>
+<v>Husky_Robotics_Firmware\CE222306_PSoC_4_I2CMaster.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Husky_Robotics_Firmware\Homework_1">
+<ExpandedNodeIds>
+<v>Husky_Robotics_Firmware</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\TopDesign</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\TopDesign\TopDesign.cysch</v>
+<v>Husky_Robotics_Firmware\Homework_1</v>
+<v>Husky_Robotics_Firmware\Homework_1\TopDesign</v>
+<v>Husky_Robotics_Firmware\Homework_1\TopDesign\TopDesign.cysch</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\TopDesign</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\TopDesign\TopDesign.cysch</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4000S</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4000S\TopDesign.ctl</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4100S</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4100S\TopDesign.ctl</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4200</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4200\TopDesign.ctl</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4200 BLE</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4200 BLE\TopDesign.ctl</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4200L</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4200L\TopDesign.ctl</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4200M</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4200M\TopDesign.ctl</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC Analog Coprocessor</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC Analog Coprocessor\TopDesign.ctl</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Husky_Robotics_Firmware</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\TopDesign</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\TopDesign\TopDesign.cysch</v>
+<v>Husky_Robotics_Firmware\Homework_1</v>
+<v>Husky_Robotics_Firmware\Homework_1\TopDesign</v>
+<v>Husky_Robotics_Firmware\Homework_1\TopDesign\TopDesign.cysch</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\TopDesign</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\TopDesign\TopDesign.cysch</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4000S</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4000S\TopDesign.ctl</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4100S</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4100S\TopDesign.ctl</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4200</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4200\TopDesign.ctl</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4200 BLE</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4200 BLE\TopDesign.ctl</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4200L</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4200L\TopDesign.ctl</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4200M</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC 4200M\TopDesign.ctl</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC Analog Coprocessor</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\PSoC4\PSoC Analog Coprocessor\TopDesign.ctl</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Husky_Robotics_Firmware</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CE220818_I2C_Master_High_Level01.gpdsc</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CE220818_I2C_Master_High_Level01.rpt</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CE220818_I2C_Master_High_Level01_timing.html</v>
+<v>Husky_Robotics_Firmware\Homework_1</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\C.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\C_PM.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_HFCLK.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_INT.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_isr.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_PM.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_TX_RX_func.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CANCommon.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CANGPIO.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CANLocalization.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CANMotorUnit.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CANPacket.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CANPower.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CANScience.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyDMA.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\P.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\P_PM.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\PortPSOC_CY8C4248AZI_L485.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\RX_1.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\RX_1_PM.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\StripLights_1.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\StripLights_1_cisr.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\StripLights_1_fisr.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\StripLights_1_fonts.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\StripLights_1_StringSel.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\StripLights_1_StringSel_PM.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\TX_1.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\TX_1_PM.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx_PM.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SCBCLK.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART_INT.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_tx.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_tx_PM.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART_BOOT.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\V.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\V_PM.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Homework_1.elf</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Homework_1.hex</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Homework_1.map</v>
+<v>Husky_Robotics_Firmware\Homework_1\Homework_1.gpdsc</v>
+<v>Husky_Robotics_Firmware\Homework_1\Homework_1.rpt</v>
+<v>Husky_Robotics_Firmware\Homework_1\Homework_1_timing.html</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\CyDMA.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_BOOT.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_I2C.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_I2C_BOOT.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_I2C_INT.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_I2C_MASTER.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_PM.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_SCB_IRQ.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_SCBCLK.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\SclPin.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\SclPin_PM.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\SdaPin.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\Listing Files\SdaPin_PM.lst</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\I2C bus PWM Controller.elf</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\I2C bus PWM Controller.hex</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\CortexM0\ARM_GCC_541\Debug\I2C bus PWM Controller.map</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.gpdsc</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller.rpt</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\I2C bus PWM Controller_timing.html</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.gpdsc</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01.rpt</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\I2C_Master_High_Level01_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Husky_Robotics_Firmware</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CE220818_I2C_Master_High_Level01.gpdsc</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CE220818_I2C_Master_High_Level01.rpt</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\CE220818_I2C_Master_High_Level01_timing.html</v>
+<v>Husky_Robotics_Firmware\Homework_1</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\C.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\C_PM.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_HFCLK.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_INT.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_isr.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_PM.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CAN_TX_RX_func.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CANCommon.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CANGPIO.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CANLocalization.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CANMotorUnit.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CANPacket.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CANPower.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CANScience.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyDMA.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Husky_Robotics_Firmware\Homework_1\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Husky_Robotics_Firmware</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\PSoC 6 Architecture TRM</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\PSoC 63 Family Datasheet</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\System Reference Guides</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\GPIO_PDL_v1_0</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\GPIO_PDL_v1_0\GPIO_PDL_v1_0.pdf</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\SCB_I2C_PDL_v2_0</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\SCB_I2C_PDL_v2_0\SCB_I2C_PDL_v2_0.pdf</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\SysClk_PDL_v1_0.pdf</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\TCPWM_PWM_PDL_v1_0</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\TCPWM_PWM_PDL_v1_0\TCPWM_PWM_PDL_v1_0.pdf</v>
+<v>Husky_Robotics_Firmware\Homework_1</v>
+<v>Husky_Robotics_Firmware\Homework_1\PSoC 4 Architecture TRM</v>
+<v>Husky_Robotics_Firmware\Homework_1\PSoC 4200L Family Datasheet</v>
+<v>Husky_Robotics_Firmware\Homework_1\System Reference Guides</v>
+<v>Husky_Robotics_Firmware\Homework_1\System Reference Guides\cy_boot_v6_0</v>
+<v>Husky_Robotics_Firmware\Homework_1\System Reference Guides\cy_dmac_v1_10</v>
+<v>Husky_Robotics_Firmware\Homework_1\System Reference Guides\cy_lfclk_v1_20</v>
+<v>Husky_Robotics_Firmware\Homework_1\CAN_v3_0.pdf</v>
+<v>Husky_Robotics_Firmware\Homework_1\cy_pins_v2_20</v>
+<v>Husky_Robotics_Firmware\Homework_1\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Husky_Robotics_Firmware\Homework_1\SCB_P4_v4_0.pdf</v>
+<v>Husky_Robotics_Firmware\Homework_1\StripLights.pdf</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\PSoC 4 Architecture TRM</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\PSoC 4200L Family Datasheet</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\System Reference Guides</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\System Reference Guides\cy_boot_v6_0</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\System Reference Guides\cy_dmac_v1_10</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\System Reference Guides\cy_lfclk_v1_20</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\cy_pins_v2_20</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\SCB_P4_v4_0.pdf</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\PSoC 4 Architecture TRM</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\PSoC 4200 Family Datasheet</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\System Reference Guides</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\System Reference Guides\cy_boot_v5_70</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\System Reference Guides\cy_lfclk_v1_20</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\SCB_P4_v4_0.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Husky_Robotics_Firmware</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\PSoC 6 Architecture TRM</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\PSoC 63 Family Datasheet</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\System Reference Guides</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\GPIO_PDL_v1_0</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\GPIO_PDL_v1_0\GPIO_PDL_v1_0.pdf</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\SCB_I2C_PDL_v2_0</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\SCB_I2C_PDL_v2_0\SCB_I2C_PDL_v2_0.pdf</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\SysClk_PDL_v1_0.pdf</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\TCPWM_PWM_PDL_v1_0</v>
+<v>Husky_Robotics_Firmware\CE220818_I2C_Master_High_Level01\TCPWM_PWM_PDL_v1_0\TCPWM_PWM_PDL_v1_0.pdf</v>
+<v>Husky_Robotics_Firmware\Homework_1</v>
+<v>Husky_Robotics_Firmware\Homework_1\PSoC 4 Architecture TRM</v>
+<v>Husky_Robotics_Firmware\Homework_1\PSoC 4200L Family Datasheet</v>
+<v>Husky_Robotics_Firmware\Homework_1\System Reference Guides</v>
+<v>Husky_Robotics_Firmware\Homework_1\System Reference Guides\cy_boot_v6_0</v>
+<v>Husky_Robotics_Firmware\Homework_1\System Reference Guides\cy_dmac_v1_10</v>
+<v>Husky_Robotics_Firmware\Homework_1\System Reference Guides\cy_lfclk_v1_20</v>
+<v>Husky_Robotics_Firmware\Homework_1\CAN_v3_0.pdf</v>
+<v>Husky_Robotics_Firmware\Homework_1\cy_pins_v2_20</v>
+<v>Husky_Robotics_Firmware\Homework_1\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Husky_Robotics_Firmware\Homework_1\SCB_P4_v4_0.pdf</v>
+<v>Husky_Robotics_Firmware\Homework_1\StripLights.pdf</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\PSoC 4 Architecture TRM</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\PSoC 4200L Family Datasheet</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\System Reference Guides</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\System Reference Guides\cy_boot_v6_0</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\System Reference Guides\cy_dmac_v1_10</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\System Reference Guides\cy_lfclk_v1_20</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\cy_pins_v2_20</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Husky_Robotics_Firmware\I2C bus PWM Controller\SCB_P4_v4_0.pdf</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01</v>
+<v>Husky_Robotics_Firmware\I2C_Master_High_Level01\PSoC 4 Architecture TRM</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="6c335137-fa19-46ce-bc2d-2fbeb6d5f2a2">
+<CyGuid_70084457-cd6a-4593-9ed0-7f6eeb432dc2 type_name="CyDesigner.Common.ProjMgmt.GUI.CyDependenciesCustomData" version="1">
+<dictName v=".\Homework_1.cydsn\Homework_1.cyprj">
+<listName />
+</dictName>
+</CyGuid_70084457-cd6a-4593-9ed0-7f6eeb432dc2>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\I2C_Master_High_Level01.cydsn\main.c" />
+<name v=".\I2C bus PWM Controller.cydsn\main.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="983, 495" SelectedTabbedMdiWindow="430f9e71-06cc-4b03-9fef-e94b2061ed77"><DocumentWindow Key="C:\Users\dchip\Documents\PSoC Creator\HR_Homeworks\Husky_Robotics_Firmware\I2C_Master_High_Level01.cydsn\main.c" Guid="859d6169-7beb-4f5b-a979-cbcbbd682f16" /><DocumentWindow Key="C:\Users\dchip\Documents\PSoC Creator\HR_Homeworks\Husky_Robotics_Firmware\I2C bus PWM Controller.cydsn\main.c" Guid="430f9e71-06cc-4b03-9fef-e94b2061ed77" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
