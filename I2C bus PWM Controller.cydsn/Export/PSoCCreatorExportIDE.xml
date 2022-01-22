@@ -37,7 +37,9 @@
       <Folder BuildType="STRICT" Path="C:\Users\davis\Documents\PSoC Creator\PCA9685_Driver\I2C bus PWM Controller.cydsn">
         <Files Root="C:\Users\davis\Documents\PSoC Creator\PCA9685_Driver\I2C bus PWM Controller.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
+          <File BuildType="BUILD" Toolchain="">PCA9685.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
+          <File BuildType="BUILD" Toolchain="">PCA9685.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\davis\Documents\PSoC Creator\PCA9685_Driver\I2C bus PWM Controller.cydsn\Generated_Source\PSoC4">
