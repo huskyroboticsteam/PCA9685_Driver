@@ -16,11 +16,14 @@
 void pca_init(){
     I2C_Start();
     I2C_Enable();
-    uint8 mode_buf[2] = {0,0b10000000};
+    uint8 mode_buf[2] = {0,0b10010000};  // set sleep mode
     writeBuffer(mode_buf, PCA9685ADDY);
     
-    uint8 freq_buf[2] = {254, 121};
+    uint8 freq_buf[2] = {254, 121};      // set frequency to 50Hz
     writeBuffer(freq_buf, PCA9685ADDY);
+    
+    uint8 mode_buf1[2] = {0,0b10000000}; // set to unsleep
+    writeBuffer(mode_buf1, PCA9685ADDY);
 }
 
 /*Writes a single byte over i2c*/
